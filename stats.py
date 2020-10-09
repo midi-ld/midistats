@@ -46,8 +46,6 @@ def process_midi(path, file):
     except (OSError, EOFError, KeyError) as e:
         print("Error in MIDI file: {}".format(e))
         pass
-    except:
-        print("Unexpected error: {}".format(sys.exc_info()[0]))
 
 
     # Output
